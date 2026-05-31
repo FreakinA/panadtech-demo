@@ -13,8 +13,7 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
+        
 
       - name: Checkout destination
         if: github.ref == 'refs/heads/main'
